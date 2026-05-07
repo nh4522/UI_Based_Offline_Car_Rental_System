@@ -6,11 +6,11 @@ The database Schema is-->
 `CREATE DATABASE carrental;`
 
 The tables are 
--usertb1,
--cartb1,
--customertb,
--rentaltb,
--returntb. 
+- usertb1,
+- cartb1,
+- customertb,
+- rentaltb,
+- returntb. 
 
 The commands for tables:
 ## Table usertb1
