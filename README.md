@@ -16,12 +16,12 @@ The system was developed to automate and maintain rental information digitally i
 - User-friendly desktop interface using Windows Forms
 # Technologies Used
 
-- ## Programming Language: C#
-- ## Framework: .NET Framework
-- ## UI Framework: WinForms
-- ## Database: MySQL
-- ## Database Management Tool: XAMPP / phpMyAdmin
-- ## Security: SHA-256 Password Hashing
+- Programming Language: C#
+- Framework: .NET Framework
+- UI Framework: WinForms
+- Database: MySQL
+- Database Management Tool: XAMPP / phpMyAdmin
+- Security: SHA-256 Password Hashing
 
 # System Workflow
 - Employee logs into the system
@@ -49,7 +49,8 @@ The system was developed to automate and maintain rental information digitally i
 
 ## Table usertb1
 Stores employee authentication information.
-```CREATE TABLE usertb1 (
+```
+CREATE TABLE usertb1 (
     Id INT PRIMARY KEY,
     Uname VARCHAR(50) NOT NULL UNIQUE,
     Upass VARCHAR(64) NOT NULL
@@ -57,7 +58,8 @@ Stores employee authentication information.
 ```
 ## Table cartb1
 Stores car information and availability status.
-```CREATE TABLE cartb1 (
+```
+CREATE TABLE cartb1 (
     Regno VARCHAR(20) PRIMARY KEY,
     Brand VARCHAR(50) NOT NULL,
     Model VARCHAR(50) NOT NULL,
@@ -67,7 +69,8 @@ Stores car information and availability status.
 ```
 ## Table customertb
 Stores customer details.
-```CREATE TABLE customertb (
+```
+CREATE TABLE customertb (
     custid INT PRIMARY KEY,
     custname VARCHAR(100) NOT NULL,
     custaddress VARCHAR(200),
@@ -77,7 +80,8 @@ Stores customer details.
 ```
 ## Table rentaltb
 Stores rental transaction information.
-```CREATE TABLE rentaltb (
+```
+CREATE TABLE rentaltb (
     rentid INT PRIMARY KEY,
     carreg VARCHAR(20) NOT NULL,
     custname VARCHAR(100) NOT NULL,
@@ -91,7 +95,8 @@ Stores rental transaction information.
 ```
 ## Table returntb
 Stores returned car information, delays, and fines.
-```CREATE TABLE returntb (
+```
+CREATE TABLE returntb (
     rentid INT PRIMARY KEY,
     carreg VARCHAR(20) NOT NULL,
     custname VARCHAR(100) NOT NULL,
