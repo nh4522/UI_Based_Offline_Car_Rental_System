@@ -13,14 +13,14 @@ The tables are
 -returntb. 
 
 The commands for tables:
-##Table usertb1
+## Table usertb1
 ```CREATE TABLE usertb1 (
     Id INT PRIMARY KEY,
     Uname VARCHAR(50) NOT NULL UNIQUE,
     Upass VARCHAR(64) NOT NULL
 );
 ```
-##Table cartb1
+## Table cartb1
 ```CREATE TABLE cartb1 (
     Regno VARCHAR(20) PRIMARY KEY,
     Brand VARCHAR(50) NOT NULL,
@@ -29,7 +29,7 @@ The commands for tables:
     Price DECIMAL(10,2) NOT NULL
 );
 ```
-##Table customertb
+## Table customertb
 ```CREATE TABLE customertb (
     custid INT PRIMARY KEY,
     custname VARCHAR(100) NOT NULL,
@@ -38,7 +38,7 @@ The commands for tables:
     nid VARCHAR(20)
 );
 ```
-##Table rentaltb
+## Table rentaltb
 ```CREATE TABLE rentaltb (
     rentid INT PRIMARY KEY,
     carreg VARCHAR(20) NOT NULL,
@@ -51,7 +51,7 @@ The commands for tables:
     FOREIGN KEY (carreg) REFERENCES cartb1(Regno) ON DELETE RESTRICT ON UPDATE CASCADE
 );
 ```
-##Table returntb
+## Table returntb
 ```CREATE TABLE returntb (
     rentid INT PRIMARY KEY,
     carreg VARCHAR(20) NOT NULL,
