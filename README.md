@@ -3,6 +3,7 @@ The system was developed for completely internal information storing and maintai
 
 
 The database Schema is-->
+## Database Creation command:
 `CREATE DATABASE carrental;`
 
 The tables are 
