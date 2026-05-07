@@ -1,20 +1,54 @@
-This was my second software development project using C#, DOTNET framewok, mySQL, and Winforms. This system has a complete user friendly environment.
-The system was developed for completely internal information storing and maintaining. The customer can choose their designated cars and select it for rent for their requirement days. Then the system automatically calculates the fare and all of the data is stored in the database. For database, I used the mySQL and Xaamp(PHPmyAdmin) to store the data. The system allows users(rental service employees) authentication[login and registation] to this system. For password storing, I used SHA-256 hashing algorithm. After finishing every successful rental, user can print the invoice and save it for further uses.
+A desktop-based Car Rental Management System developed using C#, .NET Framework, WinForms, and MySQL.
+This was my second software development project, designed to provide a complete and user-friendly environment for managing internal car rental operations efficiently.
 
+The system was developed to automate and maintain rental information digitally instead of relying on manual record keeping. It enables rental service employees to manage customers, cars, rentals, returns, and invoices through an intuitive graphical interface.
 
-The database Schema is-->
-## Database Creation command:
+# Key Features
+- Secure employee authentication system with Login and Registration
+- Password protection using SHA-256 hashing
+- Car availability management
+- Customer information management
+- Rental booking system
+- Automatic fare calculation based on rental duration
+- Return management with delay and fine calculation
+- Invoice generation and printing support
+- Fully integrated MySQL database system
+- User-friendly desktop interface using Windows Forms
+# Technologies Used
+
+- ## Programming Language: C#
+- ## Framework: .NET Framework
+- ## UI Framework: WinForms
+- ## Database: MySQL
+- ## Database Management Tool: XAMPP / phpMyAdmin
+- ## Security: SHA-256 Password Hashing
+
+# System Workflow
+- Employee logs into the system
+- Customer information is added or retrieved
+- Available cars are displayed
+- Employee selects a car and rental duration
+- System automatically calculates rental fees
+- Rental information is stored in the database
+- After returning the car, delay and fines are calculated if applicable
+- Invoice can be printed and saved for future reference
+
+# Database Schema
+
+## Database Creation:
 `CREATE DATABASE carrental;`
 
-The tables are 
-- usertb1,
-- cartb1,
-- customertb,
-- rentaltb,
-- returntb. 
+## Database Tables
+- usertb1
+- cartb1
+- customertb
+- rentaltb
+- returntb 
 
-The commands for tables:
+# Tables Structures
+
 ## Table usertb1
+Stores employee authentication information.
 ```CREATE TABLE usertb1 (
     Id INT PRIMARY KEY,
     Uname VARCHAR(50) NOT NULL UNIQUE,
@@ -22,6 +56,7 @@ The commands for tables:
 );
 ```
 ## Table cartb1
+Stores car information and availability status.
 ```CREATE TABLE cartb1 (
     Regno VARCHAR(20) PRIMARY KEY,
     Brand VARCHAR(50) NOT NULL,
@@ -31,6 +66,7 @@ The commands for tables:
 );
 ```
 ## Table customertb
+Stores customer details.
 ```CREATE TABLE customertb (
     custid INT PRIMARY KEY,
     custname VARCHAR(100) NOT NULL,
@@ -40,6 +76,7 @@ The commands for tables:
 );
 ```
 ## Table rentaltb
+Stores rental transaction information.
 ```CREATE TABLE rentaltb (
     rentid INT PRIMARY KEY,
     carreg VARCHAR(20) NOT NULL,
@@ -53,6 +90,7 @@ The commands for tables:
 );
 ```
 ## Table returntb
+Stores returned car information, delays, and fines.
 ```CREATE TABLE returntb (
     rentid INT PRIMARY KEY,
     carreg VARCHAR(20) NOT NULL,
@@ -64,3 +102,19 @@ The commands for tables:
     FOREIGN KEY (carreg) REFERENCES cartb1(Regno)
 );
 ```
+# Project Highlights
+- Applied real-world database normalization concepts
+- Implemented relational database management using foreign keys
+- Developed secure authentication with hashed passwords
+- Designed a complete CRUD-based desktop application
+- Integrated invoice generation and rental tracking
+- Improved understanding of software architecture, database connectivity, and WinForms UI design
+
+# Future Improvements
+- Migration to ASP.NET Core Web Application
+- Online booking support
+- Payment gateway integration
+- Admin dashboard with analytics
+- Role-based authentication
+- Email/SMS notification system
+- Cloud database integration
