@@ -115,9 +115,32 @@ CREATE TABLE returntb (
 - Integrated invoice generation and rental tracking
 - Improved understanding of software architecture, database connectivity, and WinForms UI design
 # The outlook of the project:
-## The login page
+## The login form
 ![Screenshot](ss/login.PNG)
 
+## The registration form
+![Screenshot](ss/registration_panel.PNG)
+
+## The main form 
+![Screenshot](ss/Main_Form.PNG)
+
+## The car information form
+![Screenshot](ss/Car_management_panel.PNG)
+
+## The Customer information form
+![Screenshot](ss/Customer_management.PNG)
+
+## The car rental form
+![Screenshot](ss/rental_managment.PNG)
+
+## The car return form
+![Screenshot](ss/car_return_and_rent.PNG)
+
+## The user management form
+![Screenshot](ss/users_management.PNG)
+
+## The generated invoice (demo)
+![Screeshot](ss/invoice.PNG)
 # Future Improvements
 - Migration to ASP.NET Core Web Application
 - Online booking support
