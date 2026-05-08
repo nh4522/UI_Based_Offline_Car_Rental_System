@@ -114,6 +114,9 @@ CREATE TABLE returntb (
 - Designed a complete CRUD-based desktop application
 - Integrated invoice generation and rental tracking
 - Improved understanding of software architecture, database connectivity, and WinForms UI design
+# The outlook of the project:
+## The login page
+![Screenshot](ss/login.PNG)
 
 # Future Improvements
 - Migration to ASP.NET Core Web Application
