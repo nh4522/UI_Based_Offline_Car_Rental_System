@@ -141,6 +141,9 @@ CREATE TABLE returntb (
 
 ## The generated invoice (demo)
 ![Screeshot](ss/invoice.PNG)
+
+## The hashing technique
+![Screenshot](ss/hashing.PNG)
 # Future Improvements
 - Migration to ASP.NET Core Web Application
 - Online booking support
